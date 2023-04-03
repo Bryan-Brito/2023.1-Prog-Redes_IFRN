@@ -1,0 +1,1 @@
+print ("Hello World!") #Printando uma mensagem simples
