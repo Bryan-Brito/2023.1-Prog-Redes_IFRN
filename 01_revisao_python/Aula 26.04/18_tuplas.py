@@ -47,3 +47,40 @@ a = 'ifrn'
 res = tuple(c*2 for c in a)
 print(res)
 
+x=(10) #o inteiro 10
+print(x)
+print(type(x))
+y=(10,) #a tupla com um elemento inteiro
+print(y)
+print(type(y))
+
+
+#Conversão
+#Por exemplo, como as Tuplas são imutáveis, para ordena-las, é necessário converter para lista.
+
+T = ('c','a','x','r')
+
+#Converter para lista
+tmp = list(T)
+print(type(tmp))
+print(tmp)
+tmp.sort()
+print(tmp)
+
+#Converter para tupla
+T = tuple(tmp)
+print(type(T))
+print(T)
+
+
+#Métodos 
+T = (1,2,3,2,5,2)
+
+#Offset do primeiro elemento com valor 2
+print(T.index(2))
+
+#O próximo indice com valor 2 após o indice 2
+print(T.index(2,2))
+
+#Quantas vezes o valor 2 aparece
+print(T.count(2))
